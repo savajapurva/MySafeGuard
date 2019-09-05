@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="fill_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="center">
+
+<TextView
+    android:id="@+id/settingsActivityErrorDialogTitle"
+    style="@style/DialogTitle"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_alignParentTop="true"
+    android:layout_margin="10.0dip"
+    android:text="@string/calibrate_error_title" />
+
+<TextView
+    android:id="@+id/settingsActivityErrorDialogText"
+    style="@style/DialogText"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/settingsActivityErrorDialogTitle"
+    android:layout_marginLeft="10.0dip"
+    android:layout_marginTop="20.0dip"
+    android:layout_marginRight="10.0dip"
+    android:layout_marginBottom="20.0dip"
+    android:text="" />
+
+<Button
+    android:id="@+id/settingsActivityErrorDialogButton"
+    style="@style/DialogButton"
+    android:layout_width="150dp"
+    android:layout_height="40dp"
+    android:layout_below="@+id/settingsActivityErrorDialogText"
+    android:layout_alignParentRight="true"
+    android:layout_margin="10.0dip"
+    android:background="@drawable/continue1"
+    android:onClick="toCancelError" />
+</RelativeLayout>

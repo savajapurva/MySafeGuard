@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:onClick="exit"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/aboutActivityVersionText"
+        style="@style/VersionText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10.0dip"
+        android:text="@string/version" />
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="40dp"
+        android:src="@drawable/windsorlogo" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <ImageView
+            android:id="@+id/aboutActivityIterImage"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/logo2" />
+
+        <TextView
+            android:id="@+id/aboutActivityTitle"
+            style="@style/AboutTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/aboutActivityIterImage"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/aboutActivityIterImage"
+            android:text="@string/about_activity_title" />
+
+        <TextView
+            android:id="@+id/aboutActivityText"
+            style="@style/AboutText"
+            android:layout_width="wrap_content"
+            android:layout_height="200dp"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@+id/aboutActivityIterImage"
+            android:maxWidth="200.0dip"
+            android:text="@string/about_activity_text" />
+    </RelativeLayout>
+</RelativeLayout>

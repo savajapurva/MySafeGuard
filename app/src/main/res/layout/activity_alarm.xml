@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Black"
+    android:onClick="closeAll"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/alarmActivityAlarmText"
+        style="@style/AlarmText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/fall_detected" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alarmActivityAlarmText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6.0dip"
+        android:src="@drawable/warn" />
+
+    <TextView
+        android:id="@+id/alarmActivityCountdown"
+        style="@style/CountdownText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmActivityAlarmText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="6.0dip" />
+
+    <ImageView
+        android:id="@+id/alarmActivityAboutImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="6.0dip" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/alarmActivityAboutImage"
+        android:layout_below="@+id/alarmActivityCountdown"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_centerInParent="true"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/alarmActivityDelimiterLeft"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="80.0dip"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/alarmActivityDelimiterRight"
+            android:layout_width="0.0dip"
+            android:layout_height="0.0dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="80.0dip"
+            android:visibility="invisible" />
+
+        <Button
+            android:id="@+id/alarmActivitySubButtonLeft"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/good"
+            android:onClick="toDiscriminateChoice"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@+id/alarmActivityDelimiterRight">
+
+            <ImageView
+                android:id="@+id/alarmActivityHandleLeft"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/falldown" />
+
+            <RelativeLayout
+                android:id="@+id/alarmActivityContentLeft"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_alignParentLeft="true"
+                android:background="@drawable/magic2"
+                android:gravity="center_vertical"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/alarmActivityTitleLeft"
+                    style="@style/AlertTitleText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginTop="6.0dip"
+                    android:layout_marginRight="40.0dip"
+                    android:text="" />
+
+                <TextView
+                    android:id="@+id/alarmActivityTextLeft"
+                    style="@style/AlertText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/alarmActivityTitleLeft"
+                    android:layout_marginTop="10.0dip"
+                    android:text="" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/alarmActivitySubButtonRight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/falldown"
+            android:onClick="toDiscriminateChoice"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/alarmActivityDelimiterLeft">
+
+            <ImageView
+                android:id="@+id/alarmActivityHandleRight"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/good" />
+
+            <RelativeLayout
+                android:id="@+id/alarmActivityContentRight"
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/magic2"
+                android:gravity="center"
+                android:visibility="gone">
+
+                <TextView
+                    style="@style/CancelAlertText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10.0dip"
+                    android:text="@string/fine" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

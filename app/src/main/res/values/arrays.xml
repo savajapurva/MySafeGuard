@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contact_options">
+        <item>SMS</item>
+        <item>Call</item>
+        <item>E-mail</item>
+    </string-array>
+    <string-array name="countdown_options">
+        <item>10 sec</item>
+        <item>20 sec</item>
+        <item>30 sec</item>
+        <item>60 sec</item>
+        <item>90 sec</item>
+    </string-array>
+    <string-array name="mode_options">
+        <item>High</item>
+        <item>Medium</item>
+        <item>Low</item>
+    </string-array>
+    <string-array name="tone_options">
+        <item>Vibration</item>
+        <item>Sound</item>
+        <item>Vib. and sound</item>
+    </string-array>
+</resources>

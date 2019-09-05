@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/contactpicker"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_gravity="center">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_hintExampleNumber="true"
+            app:ccp_contentColor="@color/box"
+            app:ccpDialog_textColor="@color/box"
+            app:ccp_hintExampleNumberType="FIXED_LINE"
+            app:ccpDialog_searchEditTextTint="@color/transparentwhite"
+            app:ccpDialog_backgroundColor="@drawable/gradient"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_carrierNumber"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:inputType="phone"
+                    android:singleLine="true"
+                    android:cursorVisible="true"/>
+
+                <ImageView
+                    android:id="@+id/contactpicker"
+                    android:clickable="true"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:src="@drawable/c1" />
+
+            </LinearLayout>
+
+
+            <Button
+            android:id="@+id/saveContact"
+            android:text="Create New"
+                android:clickable="true"
+            android:layout_width="110dp"
+            android:layout_height="wrap_content"
+            android:background="#45B649"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <!--<TextView-->
+        <!--android:text="Selected Contact Number Display Here "-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/contactpicker"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="12dp"-->
+        <!--android:id="@+id/textView"-->
+        <!--android:textSize="22dp"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="#000000"/>-->
+
+    <!--<TextView-->
+        <!--android:id="@+id/textView2"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_above="@+id/textView"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:layout_marginBottom="12dp"-->
+        <!--android:gravity="center"-->
+        <!--android:text="Selected Contact Name Display Here"-->
+        <!--android:textColor="#000000"-->
+        <!--android:textSize="22dp" />-->
+
+
+
+
+
+</LinearLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF0F3F7"
+    android:descendantFocusability="beforeDescendants"
+    android:fitsSystemWindows="true"
+    android:focusableInTouchMode="true">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/MedicationAppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:background="@color/colorPrimary"
+            app:popupTheme="@style/MedicationAppTheme.PopupOverlay" />
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/medicationsLabel"
+                style="@style/Label"
+                android:text="@string/form_section_medications" />
+
+            <LinearLayout
+                android:id="@+id/medicationsRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_7sdp"
+                android:paddingTop="@dimen/_13sdp"
+                android:paddingRight="@dimen/_7sdp"
+                android:paddingBottom="@dimen/_13sdp">
+
+                <android.support.design.widget.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/medication_name"
+                    android:textColorHint="@color/FadeGray">
+
+                    <android.support.design.widget.TextInputEditText
+                        android:id="@+id/medicationName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/Black" />
+                </android.support.design.widget.TextInputLayout>
+
+                <com.example.loginscreen.component.MyGridView
+                    android:id="@+id/medicationType"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/_1sdp"
+                    android:numColumns="4"
+                    android:verticalSpacing="0dp" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/colorLabel"
+                style="@style/Label"
+                android:text="@string/form_section_color" />
+
+            <LinearLayout
+                android:id="@+id/colorRadio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_15sdp">
+
+                <com.example.loginscreen.component.MyGridView
+                    android:id="@+id/medicationColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:numColumns="6" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/remindersLabel"
+                style="@style/Label"
+                android:text="@string/form_section_reminders" />
+
+            <LinearLayout
+                android:id="@+id/remindersInput"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_15sdp">
+
+                <android.support.v7.widget.AppCompatSpinner
+                    android:id="@+id/reminderTimeList"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/_30sdp" />
+
+                <include layout="@layout/reminder_single" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/scheduleLabel"
+                style="@style/Label"
+                android:text="@string/form_section_schedule" />
+
+            <LinearLayout
+                android:id="@+id/scheduleSection"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/_8sdp"
+                android:paddingTop="@dimen/_15sdp"
+                android:paddingRight="@dimen/_8sdp"
+                android:paddingBottom="@dimen/_15sdp">
+
+                <include layout="@layout/schedule_layout" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/saveMedicationButton"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/_30sdp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="@dimen/_8sdp"
+                android:textStyle="bold"
+                android:layout_marginBottom="@dimen/_4sdp"
+                android:background="@drawable/rounded_button"
+                android:text="@string/form_save_button"
+                android:textColor="@android:color/white" />
+        </LinearLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/Black"
+    android:padding="2.0dip">
+
+    <TextView
+        android:id="@+id/mainActivityConfirmedAdviceDialogTitle"
+        style="@style/DialogTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10.0dip"
+        android:text="@string/main_activity_confirmed_advice_title" />
+
+    <TextView
+        android:id="@+id/mainActivityConfirmedAdviceDialogText"
+        style="@style/DialogText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivityConfirmedAdviceDialogTitle"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:text="@string/main_activity_confirmed_advice_message" />
+
+    <TextView
+        android:id="@+id/mainActivityConfirmedAdviceDialogName"
+        style="@style/DialogRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivityConfirmedAdviceDialogText"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:text="@string/main_activity_confirmed_advice_name" />
+
+    <TextView
+        android:id="@+id/mainActivityConfirmedAdviceDialogNameText"
+        style="@style/DialogRowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivityConfirmedAdviceDialogText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:layout_toRightOf="@+id/mainActivityConfirmedAdviceDialogName"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/mainActivityConfirmedAdviceDialogContact"
+        style="@style/DialogRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivityConfirmedAdviceDialogName"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:text="@string/main_activity_confirmed_advice_contact" />
+
+    <TextView
+        android:id="@+id/mainActivityConfirmedAdviceDialogContactText"
+        style="@style/DialogRowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivityConfirmedAdviceDialogName"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:layout_toRightOf="@+id/mainActivityConfirmedAdviceDialogContact"
+        android:text="" />
+
+    <TextView
+        android:id="@+id/mainActivityConfirmedAdviceDialogDate"
+        style="@style/DialogRow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivityConfirmedAdviceDialogContactText"
+        android:layout_marginLeft="10.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:text="@string/main_activity_confirmed_advice_date" />
+
+    <TextView
+        android:id="@+id/mainActivityConfirmedAdviceDialogDateText"
+        style="@style/DialogRowText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/mainActivityConfirmedAdviceDialogContactText"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10.0dip"
+        android:layout_marginBottom="12.0dip"
+        android:layout_toRightOf="@+id/mainActivityConfirmedAdviceDialogDate"
+        android:text="" />
+
+    <Button
+        android:id="@+id/mainActivityConfirmedAdviceDialogButton"
+        style="@style/DialogButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/mainActivityConfirmedAdviceDialogDate"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10.0dip"
+        android:background="@drawable/continue1"
+        android:onClick="dismissDialog" />
+</RelativeLayout>

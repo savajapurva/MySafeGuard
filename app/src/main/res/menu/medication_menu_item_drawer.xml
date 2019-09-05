@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawerDashboard"
+            android:icon="@drawable/ic_medication_menu_dashboard"
+            android:title="@string/medication_drawer_menu_dashboard"/>
+        <item
+            android:id="@+id/drawerMedications"
+            android:icon="@drawable/ic_menu_medications"
+            android:title="@string/medication_drawer_menu_medications"/>
+        <!--<item-->
+            <!--android:id="@+id/drawerSettings"-->
+            <!--android:icon="@drawable/ic_medication_menu_settings"-->
+            <!--android:title="@string/medication_drawer_menu_settings"/>-->
+        <!--<item-->
+            <!--android:id="@+id/drawerHelp"-->
+            <!--android:icon="@drawable/ic_medication_help"-->
+            <!--android:title="@string/medication_drawer_menu_help"/>-->
+    </group>
+    <!--<item android:title="@string/medication_drawer_menu_communicate_group">-->
+        <!--<menu>-->
+            <!--<item-->
+                <!--android:id="@+id/drawerRateApp"-->
+                <!--android:icon="@drawable/ic_medication_menu_rate"-->
+                <!--android:title="@string/medication_drawer_menu_rate_app"/>-->
+            <!--<item-->
+                <!--android:id="@+id/drawerSendFeedback"-->
+                <!--android:icon="@drawable/ic_medication_menu_send_feedback"-->
+                <!--android:title="@string/medication_drawer_menu_send_feedback"/>-->
+            <!--<item-->
+                <!--android:id="@+id/drawerShareApp"-->
+                <!--android:icon="@drawable/ic_medication_menu_share"-->
+                <!--android:title="@string/medication_drawer_menu_share"/>-->
+        <!--</menu>-->
+    <!--</item>-->
+</menu>

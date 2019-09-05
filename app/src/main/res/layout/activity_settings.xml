@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Black"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/aboutButtonSettingsActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:visibility="gone" />
+
+    <RelativeLayout
+        android:id="@+id/settingsLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/aboutButtonSettingsActivity"
+        android:gravity="center_vertical">
+
+        <GridView
+            android:id="@+id/settingsGridview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:listSelector="@android:color/transparent"
+            android:numColumns="1"
+            android:verticalSpacing="2.0dip" />
+
+        <TextView
+            android:id="@+id/settingsTitle"
+            style="@style/settingsTitleText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/settingsGridview"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/settingsGridview"
+            android:maxWidth="200.0dip"
+            android:text="" />
+
+        <RelativeLayout
+            android:id="@+id/calibrateTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settingsTitle"
+            android:layout_alignBottom="@+id/settingsGridview"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/settingsGridview"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/calibrateTabText"
+                style="@style/SettingsTextBottom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:maxWidth="180.0dip"
+                android:text="@string/calibrate_tab_text" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/calibrateTabText"
+                android:layout_alignParentRight="true"
+                android:gravity="center|right">
+
+                <ImageButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="calibrateStart"
+                    android:src="@drawable/calib_phone" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/contactTabLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/settingsTitle"
+            android:layout_alignBottom="@+id/settingsGridview"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/settingsGridview"
+            android:visibility="gone">
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="30dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true">
+
+                    <TextView
+                        android:id="@+id/contactTabAddContactButton"
+                        style="@style/ContactText"
+                        android:layout_width="200dp"
+                        android:layout_height="60dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/ccc"
+                        android:hint="@string/no_contact"
+                        android:longClickable="true"
+                        android:onClick="toContactPick" />
+
+                    <TextView
+                        android:id="@+id/contactTabChangeDataButton"
+                        style="@style/ContactTextData"
+                        android:layout_marginTop="7dp"
+                        android:layout_width="46dp"
+                        android:layout_marginRight="7dp"
+                        android:layout_height="46dp"
+                        android:layout_gravity="right"
+                        android:background="@drawable/contact_1"
+                        android:longClickable="true"
+                        android:onClick="toEditContact" />
+
+                </FrameLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/modeTabLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/settingsTitle"
+            android:layout_alignBottom="@+id/settingsGridview"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/settingsGridview"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/modeTabList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="8.0dip"
+                android:listSelector="@android:color/transparent"
+                android:splitMotionEvents="true" />
+
+            <ScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/modeTabList"
+                android:layout_alignParentRight="true">
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/modeTabTitle"
+                        style="@style/SettingsTopTitle"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:text="" />
+
+                    <TextView
+                        android:id="@+id/modeTabText"
+                        style="@style/SettingsTopText"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center|right"
+                        android:maxWidth="180.0dip"
+                        android:text="" />
+                </LinearLayout>
+            </ScrollView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/toneTabLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/settingsTitle"
+            android:layout_alignBottom="@+id/settingsGridview"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/settingsGridview"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/toneTabList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="8.0dip"
+                android:listSelector="@android:color/transparent" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_above="@+id/toneTabList"
+                android:layout_alignParentRight="true"
+                android:gravity="center_vertical">
+
+                <Button
+                    android:id="@+id/toneTabAddToneButton"
+                    style="@style/ContactText"
+                    android:layout_width="200dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/ccc2"
+                    android:hint="@string/no_tone"
+                    android:onClick="toRingtonePick" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/countdownTabLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/settingsTitle"
+            android:layout_alignBottom="@+id/settingsGridview"
+            android:layout_marginLeft="10.0dip"
+            android:layout_toRightOf="@+id/settingsGridview"
+            android:visibility="gone">
+
+            <ListView
+                android:id="@+id/countdownTabList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:divider="@android:color/transparent"
+                android:dividerHeight="8.0dip"
+                android:listSelector="@android:color/transparent" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/calibrateLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/aboutButtonSettingsActivity"
+        android:layout_marginTop="8.0dip"
+        android:layout_marginBottom="8.0dip"
+        android:gravity="center"
+        android:visibility="gone">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ph" />
+
+        <ImageView
+            android:id="@+id/calibratingProcessImageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/calibrating" />
+
+        <TextView
+            android:id="@+id/calibratingProcessTextView"
+            style="@style/CalibratingText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/calibrating" />
+    </RelativeLayout>
+</RelativeLayout>

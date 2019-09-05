@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/dateLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:padding="@dimen/_10sdp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start: "
+                android:textColor="@color/FadeGray"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/startDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Today"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End: "
+                android:textColor="@color/FadeGray"
+                android:textSize="@dimen/_14ssp" />
+
+            <TextView
+                android:id="@+id/endDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Never"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/_14ssp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v7.widget.AppCompatSpinner
+        android:id="@+id/scheduleSelectDays"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_30sdp"
+        android:layout_below="@+id/dateLayout"
+        android:layout_marginTop="@dimen/_5sdp" />
+
+    <LinearLayout
+        android:id="@+id/daysofWeekSelection"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_34sdp"
+        android:layout_below="@id/scheduleSelectDays"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:paddingTop="@dimen/_3sdp"
+        android:paddingBottom="@dimen/_3sdp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/moBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_selected"
+            android:gravity="center"
+            android:text="MO"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/tuBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_selected"
+            android:gravity="center"
+            android:text="TU"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/weBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_selected"
+            android:gravity="center"
+            android:text="WE"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/thBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_selected"
+            android:gravity="center"
+            android:text="TH"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/frBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_selected"
+            android:gravity="center"
+            android:text="FR"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/saBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_selected"
+            android:gravity="center"
+            android:text="SA"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="@dimen/_9sdp"
+            android:layout_height="match_parent" />
+
+        <Button
+            android:id="@+id/suBtn"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/rounded_rectangle_selected"
+            android:gravity="center"
+            android:text="SU"
+            android:textColor="@android:color/white"
+            android:textStyle="bold" />
+
+        <Space
+            android:layout_width="@dimen/_5sdp"
+            android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+    <NumberPicker
+        android:id="@+id/pickSelectedDays"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/scheduleSelectDays"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:visibility="gone" />
+
+</RelativeLayout>

@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/Black"
+    android:onClick="closeAll"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/statusBarLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/test"
+                android:layout_width="40dp"
+                android:layout_height="30dp"
+                android:src="@drawable/test"
+                android:visibility="invisible"/>
+
+            <TextView
+                android:id="@+id/statusTest"
+                style="@style/TestText"
+                android:layout_marginTop="5dp"
+                android:layout_width="100dp"
+                android:layout_height="20dp"
+                android:gravity="left"
+                android:text="@string/test"
+                android:visibility="invisible" />
+
+            <ImageView
+                android:id="@+id/statusEmailIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/email_status"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/statusPhonecallIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/telephone_status"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/statusSmsIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:src="@drawable/sms_status"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/statusSensibilityIcon"
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_marginLeft="10.0dip"
+                android:visibility="gone" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/moveInformation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10.0dip"
+            android:text="" />
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/activateServiceButton"
+        android:layout_below="@+id/statusBarLayout"
+        android:layout_centerHorizontal="true"
+        android:gravity="center">
+
+        <com.androidplot.xy.XYPlot
+            android:id="@+id/graphic"
+            title=""
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/gridImage"
+            android:layout_alignTop="@+id/gridImage"
+            android:layout_alignRight="@+id/gridImage"
+            android:layout_alignBottom="@+id/gridImage"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent" />
+
+        <ImageView
+            android:id="@+id/gridImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+
+
+
+    <ImageButton
+        android:id="@+id/activateServiceButton"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:onClick="startService" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="6.0dip"
+        android:gravity="center_vertical"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:id="@+id/subButtonLeft"
+            android:layout_width="115dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_setting_1"
+            android:onClick="toSettingsActivity"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/handleLeft"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:onClick="openLeft"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/contentLeft"
+            android:layout_width="230dp"
+            android:layout_height="100dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/magic"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textLeft"
+                style="@style/sliderMainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="6.0dip"
+                android:gravity="center_horizontal"
+                android:text="" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textLeft"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:id="@+id/phoneCallButton"
+                    android:layout_width="wrap_content"
+                    android:layout_marginStart="45dp"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:onClick="selectContactOption"
+                    android:src="@drawable/telephone_off" />
+
+                <ImageButton
+                    android:id="@+id/emailButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/phoneCallButton"
+                    android:background="@null"
+                    android:visibility="gone"
+                    android:minWidth="120.0dip"
+                    android:onClick="selectContactOption"
+                    android:src="@drawable/email_off" />
+
+                <ImageButton
+                    android:id="@+id/smsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/phoneCallButton"
+                    android:layout_marginEnd="35dp"
+                    android:background="@null"
+                    android:minWidth="120.0dip"
+                    android:onClick="selectContactOption"
+                    android:src="@drawable/sms_off" />
+            </RelativeLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/subButtonRight"
+            android:layout_width="115dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/round_setting_1"
+            android:onClick="toSettingsActivity"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/handleRight"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:onClick="openRight"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/contentRight"
+            android:layout_width="245dp"
+            android:layout_height="100dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/magic"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/textRight"
+                style="@style/sliderMainText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="40.0dip"
+                android:layout_marginTop="6.0dip"
+                android:gravity="center_horizontal"
+                android:text="@string/sensibility" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textRight"
+                android:layout_centerHorizontal="true">
+
+                <ImageButton
+                    android:id="@+id/normalModeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:background="@null"
+                    android:onClick="selectNormalMode" />
+
+                <ImageButton
+                    android:id="@+id/oldModeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/normalModeButton"
+                    android:background="@null"
+                    android:minWidth="120.0dip"
+                    android:onClick="selectOldMode" />
+
+                <ImageButton
+                    android:id="@+id/motorbikeModeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/normalModeButton"
+                    android:background="@null"
+                    android:minWidth="120.0dip"
+                    android:onClick="selectMotoMode" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:APP="http://schemas.android.com/tools"
+    android:id="@+id/rLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16.0dip">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/_14sdp" />
+
+    <TextView
+        android:id="@+id/medicationName"
+        style="@style/MedicationOverviewName"
+        android:layout_toRightOf="@+id/icon" />
+
+    <TextView
+        android:id="@+id/medicationFrequency"
+        style="@style/MedicationOverviewMinor"
+        android:layout_below="@+id/medicationName"
+        android:layout_toRightOf="@+id/icon" />
+
+    <TextView
+        android:id="@+id/medicationPeriod"
+        style="@style/MedicationOverviewMinor"
+        android:layout_below="@+id/medicationFrequency"
+        android:layout_toRightOf="@+id/icon" />
+
+    <ImageButton
+        android:id="@+id/manageMedicationButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_vert_more"
+        android:visibility="gone"
+        android:background="?selectableItemBackgroundBorderless"
+        android:tint="@color/colorPrimary"/>
+</RelativeLayout>

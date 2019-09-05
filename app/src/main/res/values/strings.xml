@@ -1,0 +1,212 @@
+<resources>
+    <string name="app_name">MySafeguard</string>
+    <string name="fb_app_id">1811285005642839</string>
+    <string name="account_kit_client_token">8598b630c35f4f7d3cca57b2d93641c1</string>
+    <string name="ak_login_protocol_scheme">ak8598b630c35f4f7d3cca57b2d93641c1</string>
+    <string name="log"> Log in with: </string>
+    <string name="title_activity_add_contacts">addContacts</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_example">Example action</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_navbar">navbar</string>
+    <string name="title_activity_sos">Sos</string>
+
+    <!--Fall Detector-->
+    <string name="about_activity_text">Developed by Students of Windsor University,\n\n Rutva Patel \n Sheetal Patel \n Kesha Patel \n Apurva Savaj \n Jalpa Patel </string>
+    <string name="about_activity_title">SafeGuard:</string>
+    <string name="accept">Accept</string>
+    <string name="active_service">Service active</string>
+    <string name="alert_to">Alert to:</string>
+    <string name="alert_to_test_mode">Test mode.</string>
+    <string name="at">at</string>
+    <string name="calibrate_average_error">"Could be due to a bad configuration in the accelerometer of your device. Make sure that your accelerometer is configured properly and repeat the process.
+You can calibrate it in Settings -> Display -> Horizontal calibration."</string>
+    <string name="calibrate_deviation_error">"Please, ensure that the device is positioned on a flat and horizontal surface and repeat the process. If the problem persists may be caused by a malfunction of your device's accelerometer."</string>
+    <string name="calibrate_error_title">An error has been encountered during the calibration process.</string>
+    <string name="calibrate_tab_title_calibrated">Calibrated!</string>
+    <string name="calibrate_tab_title_no_calibrated">Not calibrated!</string>
+    <string name="calibrate_tab_text">Place your device on a horizontal flat surface and touch the icon to start the calibration process.</string>
+    <string name="calibrating">Calibrating</string>
+    <string name="calibration_succesfully">Calibration successfully!</string>
+    <string name="contact_tab_edit_contact_title">Edit contact</string>
+    <string name="contact_tab_new_contact_title">New contact</string>
+    <string name="contact_tab_title">Select and edit Contact:</string>
+    <string name="countdown_tab_title">Select reaction time before triggering the alert:</string>
+    <string name="disable_help">Do not show help messages</string>
+    <string name="email">Email:</string>
+    <string name="email_subject">MySafeGuard: Fall detector has generated a fall alert.</string>
+    <string name="error_already_test_mode">FallDetector is already running in test mode.</string>
+    <string name="error_contact_mode_not_selected">Not has been selected any notification mode.</string>
+    <string name="error_email_not_indicated">Error! Not has been idicated any email.</string>
+    <string name="error_email_not_sent">"Error! The email alert couldn't be sent."</string>
+    <string name="error_notification">Notification Error!</string>
+    <string name="error_phone_number_not_indicated">¡Error! Not has been indicated any phone number.</string>
+    <string name="error_pick_contact">Is not selected a new contact!</string>
+    <string name="error_pick_tone">Is not selected a new tone!</string>
+    <string name="error_test_mode">FallDetector is running in test mode.</string>
+    <string name="error_unasigned_contact">¡Unasigned Contact Error!</string>
+    <string name="exitAppServiceRunning">The fall detector service is still running. You can check it in the notification toolbar.</string>
+    <string name="feedback">com.example.loginscreen</string>
+    <string name="fall_confirmed">Confirmed fall!</string>
+    <string name="fall_detected">Detected fall</string>
+    <string name="feedback_changing_movement">Movement change</string>
+    <string name="feedback_damped_fall">Damped fall</string>
+    <string name="feedback_fall_detection">Fall detected!</string>
+    <string name="feedback_falled">Non-recovery fall</string>
+    <string name="feedback_initializing">Initializing the service…</string>
+    <string name="feedback_moving">Moving</string>
+    <string name="feedback_new_fall">New fall detected</string>
+    <string name="feedback_recovering">Recovering</string>
+    <string name="feedback_recuperation">Recovered</string>
+    <string name="feedback_starting">Movement detected</string>
+    <string name="feedback_waiting_for_recovery">Waiting for recovery</string>
+    <string name="feedback_working">Working</string>
+    <string name="fine">"I'm OK!"</string>
+    <string name="gps_disabled">The GPS is disabled. In case of fall, the accuracy on your location could be not exact.</string>
+    <string name="help">Help</string>
+    <string name="mail_text_1">MySafeGuard: fall detector has generated a notification of a possible fall, from a mobile device associated with the account</string>
+    <string name="mail_text_2">"Device's last known location"</string>
+    <string name="mail_text_3">"MySafeGuard: fall detector is an application developed and designed by Students of Windsor University Get it on Android-Google play https://play.google.com/store/apps/"</string>
+    <string name="main_activity_assist_grid">Graph</string>
+    <string name="main_activity_assist_title">Startup assistant</string>
+    <string name="main_activity_assist_text_service">On / Off</string>
+    <string name="main_activity_assist_text_contact">Contact modes</string>
+    <string name="main_activity_assist_text_sensibility">Sensibility modes</string>
+    <string name="main_activity_assist_text_exit">Tap Back button to exit</string>
+    <string name="main_activity_canceled_advice_message">The alert process has been cancelled. If FallDetector has activated the alarm after a minor fall, perhaps you should change the apps sensibility.</string>
+    <string name="main_activity_canceled_advice_title">Have you configured FallDetector correctly?</string>
+    <string name="main_activity_confirmed_advice_message">FallDetector has completed the alert process after detecting a fall:</string>
+    <string name="main_activity_confirmed_advice_name">Name:</string>
+    <string name="main_activity_confirmed_advice_contact">Contact:</string>
+    <string name="main_activity_confirmed_advice_date">Date:</string>
+    <string name="main_activity_confirmed_advice_title">A notification has been generated!</string>
+    <string name="main_email_selected">"Alert mode has been activated:
+e-mail notification"</string>
+    <string name="main_moto_selected">"Detection mode has been modified:
+low sensibility"</string>
+    <string name="main_normal_selected">"Detection mode has been modified:
+medium sensibility"</string>
+    <string name="main_old_selected">"Detection mode has been modified:
+high sensibility"</string>
+    <string name="main_phone_call_selected">"Alert mode has been activated:
+call notification"</string>
+    <string name="main_sms_selected">"Alert mode has been activated:
+sms notification"</string>
+    <string name="meters">meters</string>
+    <string name="mode_tab_title">Select sensibility:</string>
+    <string name="mode_tab_text_high_sensibility_text">Recommended when a small impact will always mean that a fall has taken place. Advised for people vulnerable to minor falls such as the elderly.</string>
+    <string name="mode_tab_text_high_sensibility_title">High sensibility</string>
+    <string name="mode_tab_text_low_sensibility_text">Ignores minor falls (i.e. produced by an uneven ground). Advised for motorized vehicles.</string>
+    <string name="mode_tab_text_low_sensibility_title">Slow sensibility</string>
+    <string name="mode_tab_text_normal_sensibility_text">Recommended when undertaking any daily activity that does not involve a large amount of sudden movements such as the ones that you may encounter in sport activities.</string>
+    <string name="mode_tab_text_normal_sensibility_title">Medium sensibility</string>
+    <string name="name">Name:</string>
+    <string name="no_contact">Select Contact</string>
+    <string name="no_email">Not found any e-mail address.</string>
+    <string name="no_location_text">Unable to locate the device.</string>
+    <string name="no_phone">Not found any phone number.</string>
+    <string name="no_tone">New tone</string>
+    <string name="notification_title">Fall alert!</string>
+    <string name="notification_message">A fall has been detected!</string>
+    <string name="off">Service stopped</string>
+    <string name="on">On</string>
+    <string name="phone_number">Phone number:</string>
+    <string name="press_to_continue">Touch the screen or wait to continue…</string>
+    <string name="radius">radius error:</string>
+    <string name="resetService">The Fall Detector service is restarting…</string>
+    <string name="send_to">Share with…</string>
+    <string name="sensibility">Sensibility</string>
+    <string name="settings">Settings</string>
+    <string name="settings_activity_assist_title">Configuration wizard</string>
+    <string name="settings_activity_calibrate_assist_message">To ensure the app works properly you should calibrate your device. Also configure the notifications and sensibility options using the navigational menu located at the left. Once the app is configured, touch on the Back button to use the app.</string>
+    <string name="settings_activity_contact_assist_message">"Choose the contact you wish to notify when a fall has been detected (the notification mode and phone number or e-mail). The notification mode can also be configured from the app start screen.
+Long press on the contact icon will allow you to set the Fall Detector test mode."</string>
+    <string name="settings_activity_mode_assist_message">Select the desired sensibility level. To ensure the app works properly, choose the option that will fit your activity the most. This option can also be configured from the app start screen.</string>
+    <string name="settings_activity_tone_assist_message">Select the alarm tone that the device will play when a fall is detected.</string>
+    <string name="settings_activity_countdown_assist_message">Select the time that you have to wait before ending the notification process of a detected fall. If the countdown ends and the user does not cancel it, FallDetector will send a notification to the selected contact.</string>
+    <string name="share">Share</string>
+    <string name="share_content">"I'm using SafeGuard. You can download it at Android-Google play https://play.google.com/store/apps/"</string>
+    <string name="silent">Silent</string>
+    <string name="sms_text">SafeGuard: Fall detector, has detected a possible fall</string>
+    <string name="test">TestMode</string>
+    <string name="test_canceled_alarm">The alert process has been cancelled. To use the notifications service please select a contact</string>
+    <string name="test_confirmed_alarm">The alert process has been confirmed. To use the notifications service please select a contact</string>
+    <string name="test_dialog_text">If you delete the contact you may only use Fall Detector in test mode. The fall detection service will be available but it not may issue any notification.</string>
+    <string name="test_dialog_title">Would you like to remove the contact?</string>
+    <string name="to_continue">Continue</string>
+    <string name="to_main_activity">Back</string>
+    <string name="tone_tab_title">Select tone and alert mode:</string>
+    <string name="title_activity_main">Fall Detector</string>
+    <string name="undefined">Undefined</string>
+    <string name="version">Version 1.0</string>
+    <string name="alert_OK">OK</string>
+
+    <string name="form_section_schedule">Schedule</string>
+    <string name="form_save_button">Save</string>
+    <string name="form_section_color">Color</string>
+    <string name="form_section_medications">Medication</string>
+    <string name="form_section_reminders">Reminders</string>
+    <string name="medication_name">Medication name</string>
+    <string name="feedback_form_url">https://goo.gl/forms/QvTRHTDc1LlP6XVp2</string>
+    <string name="app_slogan">Pill Reminder &amp; Medication Tracker</string>
+    <string name="openDrawer">open_drawer</string>
+    <string name="closeDrawer">close_drawer</string>
+    <string name="editMedication">Edit</string>
+    <string name="remove_medication">Remove</string>
+
+
+    <string name="medication_send_email_chooser">Select email application</string>
+    <string name="medication_send_email_no_client">No email clients installed.</string>
+    <string name="medication_send_ideas_subject">MySafeGuard Improvement Ideas</string>
+    <string name="medication_share_chooser">Share this app with friends!</string>
+    <string name="medication_share_content">"I am just using this amazing pill reminder app, which reminds me to take my medicine. Hope it will be helpful for you too!!!"</string>
+    <string name="medication_share_subject">"Look what I've found - MySafeGuard app"</string>
+
+    <string name="medication_drawer_menu_communicate_group">Communicate</string>
+    <string name="medication_drawer_menu_dashboard">Dashboard</string>
+    <string name="medication_drawer_menu_help">Help</string>
+    <string name="medication_drawer_menu_medications">Medications</string>
+    <string name="medication_drawer_menu_rate_app">Rate App</string>
+    <string name="medication_drawer_menu_send_feedback">Send feedback</string>
+    <string name="medication_drawer_menu_settings">Settings</string>
+    <string name="medication_drawer_menu_share">Share</string>
+
+    <string name="instruction_where_description">Where do you want to be reminded?</string>
+    <string name="instruction_where_subtitle_description">Drag the map to set the location</string>
+    <string name="instruction_radius_description">Choose the radius</string>
+    <string name="instruction_message_description">Enter the message</string>
+    <string name="continue_description">Continue</string>
+    <string name="error_required">Required</string>
+    <string name="message_hint">We arrived! :]</string>
+    <string name="radius_description">%1$s meters</string>
+
+    <string name="reminder_removal_alert">Remove reminder?</string>
+    <string name="reminder_removal_alert_positive">OK</string>
+    <string name="reminder_removal_alert_negative">Cancel</string>
+
+    <string name="reminder_added_success">Reminder added!</string>
+    <string name="reminder_removed_success">Reminder removed!</string>
+
+    <string name="marker_content_description">Marker</string>
+
+    <string name="geofence_unknown_error">
+    Unknown error: the Geofence service is not available now.
+  </string>
+    <string name="geofence_not_available">
+    Geofence service is not available now. Go to Settings>Location>Mode and choose High accuracy.
+  </string>
+    <string name="geofence_too_many_geofences">
+    Your app has registered too many geofences.
+  </string>
+    <string name="geofence_too_many_pending_intents">
+    You have provided too many PendingIntents to the addGeofences() call.
+  </string>
+
+</resources>

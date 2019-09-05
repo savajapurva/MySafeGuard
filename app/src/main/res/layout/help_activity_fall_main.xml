@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent"
+    android:padding="6.0dip">
+
+    <RelativeLayout
+        android:id="@+id/helpActivityMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/help_top">
+
+        <ImageView
+            android:id="@+id/helpActivityMainTitleIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dip"
+            android:src="@drawable/help_on" />
+
+        <TextView
+            android:id="@+id/helpActivityMainTitleText"
+            style="@style/DialogThemeMainTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="6.0dip"
+            android:layout_toRightOf="@+id/helpActivityMainTitleIcon"
+            android:text="@string/main_activity_assist_title" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/helpActivityMainFooter"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/help_bottom"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/helpActivityMainFooterText"
+            style="@style/DialogThemeMainText"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/main_activity_assist_text_exit" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/helpActivityMainFooter"
+        android:layout_below="@+id/helpActivityMainTitle"
+        android:background="@drawable/help_background" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/helpActivityMainFooter"
+        android:layout_below="@+id/helpActivityMainTitle">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/helpActivityMainGridIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/graph_help" />
+
+                <TextView
+                    android:id="@+id/helpActivityMainGridText"
+                    style="@style/DialogThemeMainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@+id/helpActivityMainGridIcon"
+                    android:text="@string/main_activity_assist_grid" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/line_help" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/helpActivityMainServiceIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/button_help" />
+
+                <TextView
+                    android:id="@+id/helpActivityMainServiceText"
+                    style="@style/DialogThemeMainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@+id/helpActivityMainServiceIcon"
+                    android:text="@string/main_activity_assist_text_service" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/line_help" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/helpActivityMainContactIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/contact_help" />
+
+                <TextView
+                    android:id="@+id/helpActivityMainContactText"
+                    style="@style/DialogThemeMainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@+id/helpActivityMainContactIcon"
+                    android:text="@string/main_activity_assist_text_contact" />
+            </RelativeLayout>
+
+            <ImageView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:src="@drawable/line_help" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/helpActivityMainSensibilityIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="10.0dip"
+                    android:src="@drawable/mode_help" />
+
+                <TextView
+                    android:id="@+id/helpActivityMainSensibilityText"
+                    style="@style/DialogThemeMainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="6.0dip"
+                    android:layout_toRightOf="@+id/helpActivityMainSensibilityIcon"
+                    android:text="@string/main_activity_assist_text_sensibility" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

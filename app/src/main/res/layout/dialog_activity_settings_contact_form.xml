@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/black"
+    android:padding="6.0dip">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/contact_background" />
+
+    <TextView
+        android:id="@+id/contactFormTitleText"
+        style="@style/DialogThemeMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:textColor="@color/transparentwhite"
+        android:layout_margin="10.0dip"
+        android:gravity="center"
+        android:text="" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/contactFormTitleText"
+        android:layout_margin="6.0dip">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical">
+
+                    <TextView
+                        android:id="@+id/contactFormLabelName"
+                        style="@style/DialogThemeMainText"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_centerVertical="true"
+                        android:layout_margin="4.0dip"
+                        android:gravity="center_vertical"
+                        android:text="@string/name" />
+
+                    <EditText
+                        android:id="@+id/contactFormName"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/contactFormLabelName"
+                        android:gravity="center_vertical"
+                        android:hint="@string/undefined"
+                        android:inputType="textPersonName"
+                        android:maxLines="1"
+                        android:selectAllOnFocus="true"
+                        android:textColorHighlight="@color/FadeGray" />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/contactFormLabelPhone"
+                    style="@style/DialogThemeMainText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10.0dip"
+                    android:layout_marginLeft="4.0dip"
+                    android:gravity="center|left"
+                    android:text="@string/phone_number" />
+
+                <TextView
+                    android:id="@+id/contactFormNoPhoneText"
+                    style="@style/DialogThemeMainText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:text="@string/no_phone"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/contactFormPhoneGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10.0dip" />
+
+                <TextView
+                    android:id="@+id/contactFormLabelEmail"
+                    style="@style/DialogThemeMainText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4.0dip"
+                    android:layout_marginTop="10.0dip"
+                    android:gravity="center|left"
+                    android:text="@string/email" />
+
+                <TextView
+                    android:id="@+id/contactFormNoEmailText"
+                    style="@style/DialogThemeMainText"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10.0dip"
+                    android:text="@string/no_email"
+                    android:visibility="gone" />
+
+                <RadioGroup
+                    android:id="@+id/contactFormMailGroup"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingLeft="10.0dip" />
+            </LinearLayout>
+
+            <Button
+                style="@style/DialogButton"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="right"
+                android:layout_marginTop="40.0dip"
+                android:background="@drawable/continue1"
+                android:onClick="toSaveContact" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

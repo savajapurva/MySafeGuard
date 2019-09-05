@@ -1,0 +1,77 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".AddContactsFragement"
+    android:background="@drawable/contactpicker">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <com.hbb20.CountryCodePicker
+            android:id="@+id/ccp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:ccp_hintExampleNumber="true"
+            app:ccp_contentColor="@color/box"
+            app:ccpDialog_textColor="@color/box"
+            app:ccp_hintExampleNumberType="FIXED_LINE"
+            app:ccpDialog_searchEditTextTint="@color/transparentwhite"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/editText_carrierNumber"
+                    android:layout_width="130dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="20dp"
+                    android:cursorVisible="true"
+                    android:inputType="phone"
+                    android:singleLine="true" />
+
+                <ImageView
+                    android:id="@+id/contactpicker"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="10dp"
+                    android:clickable="true"
+                    android:src="@drawable/c1" />
+
+            </LinearLayout>
+
+
+            <Button
+                android:id="@+id/saveContact"
+                android:layout_width="110dp"
+                android:layout_height="wrap_content"
+                android:background="#45B649"
+                android:text="Create New" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/Click"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Button" />
+
+</FrameLayout>

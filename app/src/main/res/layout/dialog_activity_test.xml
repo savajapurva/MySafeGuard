@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@color/Black"
+    android:padding="2.0dip">
+
+    <TextView
+        android:id="@+id/testDialogTitle"
+        style="@style/DialogThemeMainTitle"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_margin="10.0dip"
+        android:text="@string/test_dialog_title" />
+
+    <TextView
+        android:id="@+id/testDialogText"
+        style="@style/DialogThemeMainText"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/testDialogTitle"
+        android:text="@string/test_dialog_text" />
+
+    <Button
+        android:id="@+id/testDialogButton"
+        style="@style/DialogButton"
+        android:layout_width="150dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/testDialogText"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20.0dip"
+        android:background="@drawable/continue1"
+        android:onClick="setTestMode" />
+</RelativeLayout>

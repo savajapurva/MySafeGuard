@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/menu_share"
+        android:icon="@drawable/share"
+        android:orderInCategory="1"
+        app:showAsAction="never"
+        android:title="@string/share" />
+    <item
+        android:id="@+id/menu_settings"
+        android:icon="@drawable/settings"
+        android:orderInCategory="2"
+        app:showAsAction="never"
+        android:title="@string/settings" />
+    <item
+        android:id="@+id/menu_help"
+        android:checkable="true"
+        android:enabled="true"
+        android:icon="@drawable/help"
+        android:orderInCategory="3"
+        app:showAsAction="never"
+        android:title="@string/help"
+        android:visible="true" />
+</menu>

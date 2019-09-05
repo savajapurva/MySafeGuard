@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:orientation="vertical"
+android:background="@drawable/sos">
+
+
+<LinearLayout
+    android:id = "@+id/Everything"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <!-- other actual layout stuff here EVERYTHING HERE -->
+
+    <Button
+        android:id="@+id/buttonsos"
+        android:layout_gravity="center"
+        android:layout_marginTop="90dp"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/presstest" />
+
+    <TextView
+        android:id="@+id/txtmsg"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hold For 3 sec"
+        android:textColor="@color/transparentwhite"
+        android:textSize="20sp"
+        android:layout_gravity="center"/>
+
+    <com.example.loginscreen.VoiceView
+        android:id="@+id/recordButton"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="20dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center_horizontal"
+        android:visibility="visible" />
+
+    <TextView
+        android:id="@+id/demotxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/recordButton"
+        android:layout_gravity="center"
+        android:layout_marginTop="2dp"
+        android:textColor="@color/transparentwhite"
+        android:textSize="20sp"
+        android:text="Say Help Me"/>
+
+    <TextView
+        android:id="@+id/userSpeechText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/demotxt"
+        android:visibility="invisible"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        android:textColor="@color/transparentwhite"
+        android:textSize="1sp"
+        tools:text="Help me" />
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Listening..."
+        android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+        android:textColor="@color/status_not_hearing"
+        android:visibility="gone"
+        tools:visibility="visible" />
+
+
+    <TextView
+        android:id="@+id/speechRecogText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/status"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textColor="#000000"
+        android:textSize="16sp"
+        tools:text="Help me" />
+
+    <Button
+        android:id="@+id/btn_stop_location_updates"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:enabled="false"
+        android:visibility="invisible"
+        android:background="@drawable/stoptimer" />
+
+    <TextView
+        android:id="@+id/locationUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_stop_location_updates"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:visibility="invisible"
+        android:textColor="@color/FadeGreen"
+        android:textSize="16sp"
+        android:text="Click/Speak Stop Updates"/>
+
+
+</LinearLayout>
+
+<LinearLayout
+    android:id="@+id/overlay"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_marginBottom="120dp">
+
+    <com.example.loginscreen.CustomProgressBar
+        android:id="@+id/pb"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:indeterminate="false"
+        android:max="100"
+        android:progress="0"
+        android:progressDrawable="@drawable/progress_circle" />
+
+
+</LinearLayout>
+
+</FrameLayout>

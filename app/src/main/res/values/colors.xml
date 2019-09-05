@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#2ABE62</color>
+    <color name="gm">#F0595F</color>
+    <color name="box">#F2FAF9</color>
+    <color name="transparentwhite">#cccccc</color>
+    <color name="string">#000000</color>
+    <color name="start">#c94b4b</color>
+    <color name="end">#4b134f</color>
+    <color name="status_hearing">#01B6DD</color>
+    <color name="status_not_hearing">#757575</color>
+
+    <!--FadeDetector-->
+    <color name="Black">#ff000000</color>
+    <color name="FadeGray">#ff999999</color>
+    <color name="FadeGreen">#ff30ff03</color>
+    <color name="FadeRed">#ffff0a81</color>
+    <color name="FadeYellow">#ffffdc0a</color>
+
+    <color name="colorPrimaryy">#ff3b4552</color>
+    <color name="colorPrimaryDarkk">#16566E</color>
+    <color name="colorAccentt">#ff09dd9d</color>
+    <color name="lightOrange">#FF6666</color>
+    <color name="medicationMystic">#ffe1e5ed</color>
+    <color name="colorLabelBackground">@color/medicationMystic</color>
+    <color name="medicationColorBlack">#ff494949</color>
+    <color name="medicationColorBlue">#ff1d80ff</color>
+    <color name="medicationColorBrown">#ff86480f</color>
+    <color name="medicationColorGreen">#ff18d926</color>
+    <color name="medicationColorOlive">#ff507114</color>
+    <color name="medicationColorOrange">#ffff8f00</color>
+    <color name="medicationColorPink">#ffff68c7</color>
+    <color name="medicationColorPurple">#ff8331f4</color>
+    <color name="medicationColorRed">#ffff4241</color>
+    <color name="medicationColorTeal">#ff1ee1e6</color>
+    <color name="medicationColorWhite">#ffffffff</color>
+    <color name="medicationColorYellow">#fff5f352</color>
+
+    <color name="colorReminderFill">#9600574b</color>
+</resources>
