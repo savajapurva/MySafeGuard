@@ -1,6 +1,11 @@
 # MySafeGuard
 An android app which can trigger SMS alert in case of any emergency situations.
 
+### Technology & Tools:
+
+- Java
+- Android Studio
+
 ### Login & Dashboard
 
 - To access the features of our app user need to login through gmail or phone number
