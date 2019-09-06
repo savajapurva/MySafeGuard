@@ -14,7 +14,7 @@ An android app which can trigger SMS alert in case of any emergency situations.
 - SMS has been automatically sent to their added emergency contacts once the keyword “HELP ME” detected by the application
 - Interestingly, voice can be detected even if the phone is locked by the user. Moreover, for the interval of 15 minutes SMS will be keep on sending automatically to their emergency contact until the user speaks “STOP UPDATE” keyword
 
-<img src="gifs/login.gif" width="300" height="500"> 
+<img src="gifs/voice_sos.gif" width="300" height="500"> 
 
 ### Safezone Feature
 
