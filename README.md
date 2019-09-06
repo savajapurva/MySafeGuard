@@ -26,8 +26,8 @@ An android app which can trigger SMS alert in case of any emergency situations.
 ### Fall Detection Feature
 
 - At first, after clicking on power on button the accelerometer starts detecting movements and if the sensor detects such value that exceeds threshold limit value than popup screen will be displayed to user with the timer of 20sec
+- User can select mode of contact as well. For Instance, by enabling both call and text options the app will make a call as well as send an SMS to the emergency contact
 - If nothing is selected in 20sec than SMS alert will send to the emergency contact with live location
-
 - Level of sensitivity can also be configure as low, medium, high in the setting
 
 <img src="gifs/falldetection.gif" width="300" height="500">
