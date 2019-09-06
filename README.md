@@ -10,7 +10,7 @@ An android app which can trigger SMS alert in case of any emergency situations.
 
 ### SOS Feature
 
-- It has two voice commands ”HELP ME” & “STOP UPDATE”
+- It has two voice commands ”HELP ME” & “STOP UPDATES”
 - SMS has been automatically sent to their added emergency contacts once the keyword “HELP ME” detected by the application
 - Interestingly, voice can be detected even if the phone is locked by the user. Moreover, for the interval of 15 minutes SMS will be keep on sending automatically to their emergency contact until the user speaks “STOP UPDATE” keyword
 
